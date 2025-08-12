@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "d4f78fe1-ae6d-4e8a-8983-ccacb9f402c5",
+		"name": "CoinDesk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2231567"
+	},
+	"item": [
+		{
+			"name": "new origin format",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": {\n        \"updated\": \"Sep 2, 2024 07:07:20 UTC\",\n        \"updatedISO\": \"2024-09-02T07:07:20+00:00\",\n        \"updateduk\": \"Sep 2, 2024 at 08:07 BST\"\n    },\n    \"disclaimer\": \"just for test\",\n    \"chartName\": \"Bitcoin\",\n    \"bpi\": {\n        \"USD\": {\n            \"code\": \"USD\",\n            \"symbol\": \"&#36;\",\n            \"rate\": \"57,756.298\",\n            \"description\": \"United States Dollar\",\n            \"rate_float\": 57756.2984\n        },\n        \"GBP\": {\n            \"code\": \"GBP\",\n            \"symbol\": \"&pound;\",\n            \"rate\": \"43,984.02\",\n            \"description\": \"British Pound Sterling\",\n            \"rate_float\": 43984.0203\n        },\n        \"EUR\": {\n            \"code\": \"EUR\",\n            \"symbol\": \"&euro;\",\n            \"rate\": \"52,243.287\",\n            \"description\": \"Euro\",\n            \"rate_float\": 52243.2865\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/origin_coin_desk/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"origin_coin_desk",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "origin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": {\n        \"updated\": \"Sep 2, 2024 07:07:20 UTC\",\n        \"updatedISO\": \"2024-09-02T07:07:20+00:00\",\n        \"updateduk\": \"Sep 2, 2024 at 08:07 BST\"\n    },\n    \"disclaimer\": \"just for test\",\n    \"chartName\": \"Bitcoin\",\n    \"bpi\": {\n        \"USD\": {\n            \"code\": \"USD\",\n            \"symbol\": \"&#36;\",\n            \"rate\": \"57,756.298\",\n            \"description\": \"United States Dollar\",\n            \"rate_float\": 57756.2984\n        },\n        \"GBP\": {\n            \"code\": \"GBP\",\n            \"symbol\": \"&pound;\",\n            \"rate\": \"43,984.02\",\n            \"description\": \"British Pound Sterling\",\n            \"rate_float\": 43984.0203\n        },\n        \"EUR\": {\n            \"code\": \"EUR\",\n            \"symbol\": \"&euro;\",\n            \"rate\": \"52,243.287\",\n            \"description\": \"Euro\",\n            \"rate_float\": 52243.2865\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/origin_coin_desk/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"origin_coin_desk",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Read]",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": {\n        \"updated\": \"Sep 2, 2024 07:07:20 UTC\",\n        \"updatedISO\": \"2024-09-02T07:07:20+00:00\",\n        \"updateduk\": \"Sep 2, 2024 at 08:07 BST\"\n    },\n    \"disclaimer\": \"just for test\",\n    \"chartName\": \"Bitcoin\",\n    \"bpi\": {\n        \"USD\": {\n            \"code\": \"USD\",\n            \"symbol\": \"&#36;\",\n            \"rate\": \"57,756.298\",\n            \"description\": \"United States Dollar\",\n            \"rate_float\": 57756.2984\n        },\n        \"GBP\": {\n            \"code\": \"GBP\",\n            \"symbol\": \"&pound;\",\n            \"rate\": \"43,984.02\",\n            \"description\": \"British Pound Sterling\",\n            \"rate_float\": 43984.0203\n        },\n        \"EUR\": {\n            \"code\": \"EUR\",\n            \"symbol\": \"&euro;\",\n            \"rate\": \"52,243.287\",\n            \"description\": \"Euro\",\n            \"rate_float\": 52243.2865\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/coin_desk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"coin_desk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Read] by code",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": {\n        \"updated\": \"Sep 2, 2024 07:07:20 UTC\",\n        \"updatedISO\": \"2024-09-02T07:07:20+00:00\",\n        \"updateduk\": \"Sep 2, 2024 at 08:07 BST\"\n    },\n    \"disclaimer\": \"just for test\",\n    \"chartName\": \"Bitcoin\",\n    \"bpi\": {\n        \"USD\": {\n            \"code\": \"USD\",\n            \"symbol\": \"&#36;\",\n            \"rate\": \"57,756.298\",\n            \"description\": \"United States Dollar\",\n            \"rate_float\": 57756.2984\n        },\n        \"GBP\": {\n            \"code\": \"GBP\",\n            \"symbol\": \"&pound;\",\n            \"rate\": \"43,984.02\",\n            \"description\": \"British Pound Sterling\",\n            \"rate_float\": 43984.0203\n        },\n        \"EUR\": {\n            \"code\": \"EUR\",\n            \"symbol\": \"&euro;\",\n            \"rate\": \"52,243.287\",\n            \"description\": \"Euro\",\n            \"rate_float\": 52243.2865\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/coin_desk/USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"coin_desk",
+						"USD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Delete] by code ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/coin_desk/USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"coin_desk",
+						"USD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Create]",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": {\n        \"updated\": \"Sep 2, 2024 07:07:20 UTC\",\n        \"updatedISO\": \"2024-09-02T07:07:20+00:00\",\n        \"updateduk\": \"Sep 2, 2024 at 08:07 BST\"\n    },\n    \"disclaimer\": \"just for test\",\n    \"chartName\": \"Bitcoin\",\n    \"bpi\": {\n        \"USD\": {\n            \"code\": \"USD\",\n            \"symbol\": \"&#36;\",\n            \"rate\": \"57,756.298\",\n            \"description\": \"United States Dollar\",\n            \"rate_float\": 57756.2984\n        },\n        \"GBP\": {\n            \"code\": \"GBP\",\n            \"symbol\": \"&pound;\",\n            \"rate\": \"43,984.02\",\n            \"description\": \"British Pound Sterling\",\n            \"rate_float\": 43984.0203\n        },\n        \"EUR\": {\n            \"code\": \"EUR\",\n            \"symbol\": \"&euro;\",\n            \"rate\": \"52,243.287\",\n            \"description\": \"Euro\",\n            \"rate_float\": 52243.2865\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/coin_desk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"coin_desk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Update]",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbol\": \"[update] &pound;\",\n    \"rate\": \"1234.5678\",\n    \"description\": \"[update] British Pound Sterling\",\n    \"rate_float\": 8765.4321\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/v1.0/coin_desk/EUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"v1.0",
+						"coin_desk",
+						"EUR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[origin] json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://kengp3.github.io/blog/coindesk.json",
+					"protocol": "https",
+					"host": [
+						"kengp3",
+						"github",
+						"io"
+					],
+					"path": [
+						"blog",
+						"coindesk.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
